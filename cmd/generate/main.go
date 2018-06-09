@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	tree, err := language.Parse(`MATCH (m:MOVIE {name: "Judge Dredd", year: 2012}) RETURN m`)
+	tree, err := language.Parse(`MATCH (m:MOVIE {name: "Buried"}) RETURN m.year, m.rating`)
 	if err != nil {
 		log.Fatalf("Could not parse error: %s", err.Error())
 	}

@@ -50,7 +50,7 @@ field
     ;
 
 fieldValue
-    : '"' WS* AnyText (WS+ AnyText)+ '"'
+    : '"' WS* AnyText (WS+ AnyText)* '"'
     | NumberText
     ;
 

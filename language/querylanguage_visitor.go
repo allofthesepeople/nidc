@@ -2,6 +2,7 @@
 
 package language // QueryLanguage
 import "github.com/antlr/antlr4/runtime/Go/antlr"
+
 // A complete Visitor for a parse tree produced by QueryLanguageParser.
 type QueryLanguageVisitor interface {
 	antlr.ParseTreeVisitor
@@ -38,5 +39,4 @@ type QueryLanguageVisitor interface {
 
 	// Visit a parse tree produced by QueryLanguageParser#nodeName.
 	VisitNodeName(ctx *NodeNameContext) interface{}
-
 }
